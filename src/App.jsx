@@ -1,20 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/header-Dhara.jsx";
-import Footer from "./components/footer-Dhara.jsx";
-// Pages
-// import Home from "./home.jsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DarkAboutUs from './components/about-Devang';
+import Header from './components/header-Dhara';
+import Footer from './components/footer-Dhara';
 
-
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-      <Header />
-
-      <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* other routes later */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <Router>
+      <div className="App">
+        <Header />
+        <DarkAboutUs />
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
+export default App;
